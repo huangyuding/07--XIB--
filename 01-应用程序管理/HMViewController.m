@@ -8,6 +8,7 @@
 
 #import "HMViewController.h"
 #import "HMAppInfo.h"
+#import "HMAppView.h"
 
 #define kAppViewW 80
 #define kAppViewH 90
@@ -54,7 +55,7 @@
         CGFloat y = kStartY + marginY + row * (marginY + kAppViewH);
         
         // 从XIB来加载自定义视图
-        UIView *appView = [[[NSBundle mainBundle] loadNibNamed:@"HMAppView" owner:nil options:nil] lastObject];
+        HMAppView *appView = [[[NSBundle mainBundle] loadNibNamed:@"HMAppView" owner:nil options:nil] lastObject];
         // 设置视图位置
         appView.frame = CGRectMake(x, y, kAppViewW, kAppViewH);
         
@@ -64,19 +65,22 @@
         HMAppInfo *appInfo = self.appList[i];
         
         // 1> UIImageView
-        UIImageView *icon = appView.subviews[0];
+//        UIImageView *icon = appView.subviews[0];
+        UIImageView *icon = appView.iconView;
         
         // 设置图像
         icon.image = appInfo.image;
         
         // 2> UILabel -> 应用程序名称
-        UILabel *label = appView.subviews[1];
+//        UILabel *label = appView.subviews[1];
+        UILabel *label = appView.label;
         
         // 设置应用程序名称
         label.text = appInfo.name;
         
         // 3> UIButton -> 下载按钮
-        UIButton *button = appView.subviews[2];
+//        UIButton *button = appView.subviews[2];
+        UIButton *button = appView.button;
         
         // 给按钮添加监听方法
         button.tag = i;

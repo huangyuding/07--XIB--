@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0510"
+   LastUpgradeVersion = "0640"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -17,6 +17,20 @@
                BlueprintIdentifier = "186BB6C4199C41600080C62E"
                BuildableName = "01-&#x5e94;&#x7528;&#x7a0b;&#x5e8f;&#x7ba1;&#x7406;.app"
                BlueprintName = "01-&#x5e94;&#x7528;&#x7a0b;&#x5e8f;&#x7ba1;&#x7406;"
+               ReferencedContainer = "container:01-&#x5e94;&#x7528;&#x7a0b;&#x5e8f;&#x7ba1;&#x7406;.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "186BB6E5199C41610080C62E"
+               BuildableName = "01-&#x5e94;&#x7528;&#x7a0b;&#x5e8f;&#x7ba1;&#x7406;Tests.xctest"
+               BlueprintName = "01-&#x5e94;&#x7528;&#x7a0b;&#x5e8f;&#x7ba1;&#x7406;Tests"
                ReferencedContainer = "container:01-&#x5e94;&#x7528;&#x7a0b;&#x5e8f;&#x7ba1;&#x7406;.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -58,7 +72,8 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "186BB6C4199C41600080C62E"
@@ -76,7 +91,8 @@
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "186BB6C4199C41600080C62E"
